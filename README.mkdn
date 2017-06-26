@@ -1,7 +1,7 @@
-Device Tree for Samsung Galaxy J7 (j7ltespr)
+Common Tree for Samsung Galaxy J7 (j7ltespr/j7ltechn)
 ==============================================
 
-The Galaxy J7 (codenamed _"j7ltespr"_) is a mid-range smartphone from Samsung Electronics.
+The Galaxy J7 is a mid-range smartphone from Samsung Electronics.
 It was released on June, 2015.
 
 Basic   | Spec Sheet
