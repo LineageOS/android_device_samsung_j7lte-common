@@ -3,9 +3,6 @@
 # ADSP
 vendor/lib/libmdsprpc.so
 
-# Bluetooth
-vendor/lib/libCommandSvc.so
-
 # Camera
 etc/B05QL_s5k5e3yx_module_info.xml
 etc/T13QL_s5k3l2xx_module_info.xml
@@ -42,8 +39,6 @@ lib/libface.so
 lib/libmmcamera2_stats_algorithm.so
 lib/libmmcamera_cac2_lib_13M.so
 lib/libmmcamera_wavelet_lib.so
-lib/libQjpeg.so
-lib/libQmageDecoder.so
 lib/libTsAf.so
 
 vendor/lib/libactuator_dw9806_camcorder.so
@@ -89,21 +84,6 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqc-opt.so
 vendor/lib/libqomx_jpegenc.so
 
-# DRM
-lib/libstagefright_hdcp.so
-
-# Graphics
-vendor/lib/libmmhttpstack.so
-vendor/lib/libmmiipstreammmihttp.so
-vendor/lib/libmmipstreamaal.so
-vendor/lib/libmmipstreamnetwork.so
-vendor/lib/libmmipstreamsourcehttp.so
-vendor/lib/libmmipstreamutils.so
-vendor/lib/libmmparser_lite.so
-
-# Media
-vendor/lib/libmmosal.so
-
 # NFC (From https://github.com/NXPNFCProject/NXPNFCC_FW/blob/master/pn548ad/32-bit/libpn548ad_fw.so)
 vendor/firmware/libpn548ad_fw.so|88a35cebace27c3a93439972660f034b
 
@@ -120,15 +100,3 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
-
-# Security
-vendor/lib/libCommandSvc.so
-vendor/lib/libSampleAuthJNI.so
-vendor/lib/libSecureSampleAuthClient.so
-vendor/lib/libSecureSampleAuthJNI.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsecureuisvc_jni.so
-vendor/lib/libStDrvInt.so
-
