@@ -44,8 +44,8 @@ void init_target_properties(void)
 	if (bootloader.find("J700P") == 0) {
 		device = (char *)"j7ltespr";
 		model = (char *)"SM-J700P";
-                operator_alpha = (char *)"Chameleon";
-                operator_numeric = (char *)"310000";
+		operator_alpha = (char *)"Chameleon";
+		operator_numeric = (char *)"310000";
 		network_type=CDMA_DEVICE;
 	}
 	else if (bootloader.find("J7008") == 0) {
@@ -58,5 +58,5 @@ void init_target_properties(void)
 	}
 	/* set the properties */
 	set_target_properties((char *)bootloader.c_str(), device, model,
-		       network_type, operator_alpha, operator_numeric);
+			   network_type, operator_alpha, operator_numeric);
 }
