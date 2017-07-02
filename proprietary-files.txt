@@ -84,6 +84,9 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqc-opt.so
 vendor/lib/libqomx_jpegenc.so
 
+# IRQ Balancer
+bin/msm_irqbalance
+
 # NFC (From https://github.com/NXPNFCProject/NXPNFCC_FW/blob/master/pn548ad/32-bit/libpn548ad_fw.so)
 vendor/firmware/libpn548ad_fw.so|88a35cebace27c3a93439972660f034b
 
