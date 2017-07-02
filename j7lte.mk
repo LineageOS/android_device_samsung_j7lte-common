@@ -28,10 +28,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Camera
-PRODUCT_PACKAGES += Snap
+PRODUCT_PACKAGES += \
+	Snap
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+	$(LOCAL_PATH)/overlay
 
 # Dalvik/ART
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
