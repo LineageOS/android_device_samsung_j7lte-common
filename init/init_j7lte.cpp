@@ -46,16 +46,21 @@ void init_target_properties(void)
 	std::string bootloader = property_get("ro.bootloader");
 
 	if (bootloader.find("J700P") == 0) {
+		build_id = (char *)"MMB29M";
 		device = (char *)"j7ltespr";
 		model = (char *)"SM-J700P";
 		operator_alpha = (char *)"Chameleon";
 		operator_numeric = (char *)"310000";
 		network_type=CDMA_DEVICE;
+		version_release = (char *)"6.0.1";
 	}
 	else if (bootloader.find("J7008") == 0) {
+		build_id = (char *)"LMY47O";
 		device = (char *)"j7ltechn";
 		model = (char *)"SM-J7008";
+		name = (char *)"j7ltezm";
 		network_type=LTE_DEVICE;
+		version_release = (char *)"5.1";
 	}
 	else {
 		return;
