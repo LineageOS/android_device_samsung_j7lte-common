@@ -42,7 +42,7 @@ lib/libtinyalsa.so|f6289d56c9f016939c96bff666c8ceb9
 etc/B05QL_s5k5e3yx_module_info.xml
 etc/T13QL_s5k3l2xx_module_info.xml
 
-lib/hw/camera.msm8916.so:camera.vendor.msm8916.so
+lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
 
 lib/libaec_algo_front.so
 lib/libaec_algo_rear.so
