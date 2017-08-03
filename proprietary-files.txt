@@ -5,11 +5,9 @@ vendor/lib/libmdsprpc.so
 
 # Audio from J5 stock ROM J500HXXU1APE5_J500HOXE1APE5_J500HXXU1APC2
 lib/hw/audio.primary.msm8916.so|f5655e39f6d0f7286c047a92b6eb980b
-
 lib/soundfx/libaudiosa_sec.so|59dfd2197b9ffeae2406674b78366aa4
 lib/soundfx/libaudioeffectoffload.so|2612cb27f13fc0a1596b102a0e4772b8
 lib/soundfx/libmyspace.so|67b87dea2e7dbad563675b02448eadd0
-
 lib/libaudioroute.so|f9a507b7388c37e2c87e1838b7118c82
 lib/lib_DNSe_EP_ver216b.so|dd715c29800a3aed28840d0973ac58e3
 lib/lib_DNSe_NRSS_ver230.so|8da8b6743aeb4f922dd4215f82b630bc
@@ -41,9 +39,7 @@ lib/libtinyalsa.so|f6289d56c9f016939c96bff666c8ceb9
 # Camera
 etc/B05QL_s5k5e3yx_module_info.xml
 etc/T13QL_s5k3l2xx_module_info.xml
-
 lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
-
 lib/libaec_algo_front.so
 lib/libaec_algo_rear.so
 lib/libaf_algo_rear.so
@@ -75,7 +71,6 @@ lib/libmmcamera2_stats_algorithm.so
 lib/libmmcamera_cac2_lib_13M.so
 lib/libmmcamera_wavelet_lib.so
 lib/libTsAf.so
-
 vendor/lib/libactuator_dw9806_camcorder.so
 vendor/lib/libactuator_dw9806_camera.so
 vendor/lib/libchromatix_s5k3l2xx_vt_hd.so
