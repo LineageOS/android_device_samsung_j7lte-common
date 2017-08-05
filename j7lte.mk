@@ -22,14 +22,6 @@ $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
 LOCAL_PATH := device/samsung/j7lte-common
 
-# Audio configuration files
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
-
-# Camera
-PRODUCT_PACKAGES += \
-	Snap
-
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay
@@ -37,62 +29,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Dalvik/ART
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-# Doze
-PRODUCT_PACKAGES += \
-	SamsungDoze
-
 # HWUI Caches
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
-# Media (camera) configuration files
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
-
-# NFC
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-	$(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-	$(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
-
-PRODUCT_PACKAGES += \
-	com.android.nfc_extras \
-	nfc_nci.pn54x.msm8916 \
-	libnfc_nci_jni \
-	libnfc-nci \
-	NfcNci \
-	Tag
-
-# Permissions
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-	frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-	frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-	frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
-
-# Remove packages
-PRODUCT_PACKAGES += \
-	RemovePackages
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-	init.target.rc
-
-# RIL Shim
-PRODUCT_PACKAGES += \
-	libril_shim
-
-# Screen density
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-
+# Languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Include package config fragments
+include $(LOCAL_PATH)/product/*.mk
