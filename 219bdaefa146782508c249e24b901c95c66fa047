@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e7a3af9_4cbf9d8e",
+        "filename": "overlay/packages/apps/FlipFlap/res/values/dimens.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 17941
+      },
+      "writtenOn": "2017-08-06T12:18:52Z",
+      "side": 1,
+      "message": "J7lte\u0027s resolution is 720 x 1280 pixels\nu\u0027re should use 720px on this line",
+      "revId": "219bdaefa146782508c249e24b901c95c66fa047",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ae0f5fa9_cb61a756",
+        "filename": "overlay/packages/apps/FlipFlap/res/values/dimens.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 17941
+      },
+      "writtenOn": "2017-08-06T12:18:52Z",
+      "side": 1,
+      "message": "~320px",
+      "revId": "219bdaefa146782508c249e24b901c95c66fa047",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
