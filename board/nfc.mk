@@ -1,3 +1,0 @@
-# NFC Chip type
-BOARD_NFC_CHIPSET := pn548
-BOARD_NFC_DEVICE := "/dev/pn547"
